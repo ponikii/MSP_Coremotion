@@ -14,6 +14,9 @@
 		9D18A33C2CD2E80C00F082AE /* Max_GyroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D18A33B2CD2E80C00F082AE /* Max_GyroTests.swift */; };
 		9D18A3462CD2E80C00F082AE /* Max_GyroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D18A3452CD2E80C00F082AE /* Max_GyroUITests.swift */; };
 		9D18A3482CD2E80C00F082AE /* Max_GyroUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D18A3472CD2E80C00F082AE /* Max_GyroUITestsLaunchTests.swift */; };
+		9D18A3562CE5C39300F082AE /* CocoaAsyncSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 9D18A3552CE5C39300F082AE /* CocoaAsyncSocket */; };
+		9D18A3F12CE6470600F082AE /* SwiftOSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D18A3F02CE646FE00F082AE /* SwiftOSC.framework */; };
+		9D18A3F22CE6470600F082AE /* SwiftOSC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9D18A3F02CE646FE00F082AE /* SwiftOSC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +34,28 @@
 			remoteGlobalIDString = 9D18A3262CD2E80B00F082AE;
 			remoteInfo = "Max-Gyro";
 		};
+		9D18A3EF2CE646FE00F082AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D18A3EB2CE646FE00F082AE /* iOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 036486761F820BBD00F3D6CE;
+			remoteInfo = SwiftOSC;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9D18A3F32CE6470600F082AE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9D18A3F22CE6470600F082AE /* SwiftOSC.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9D18A3272CD2E80B00F082AE /* Max-Gyro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Max-Gyro.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +68,7 @@
 		9D18A3412CD2E80C00F082AE /* Max-GyroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Max-GyroUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D18A3452CD2E80C00F082AE /* Max_GyroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Max_GyroUITests.swift; sourceTree = "<group>"; };
 		9D18A3472CD2E80C00F082AE /* Max_GyroUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Max_GyroUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9D18A3EB2CE646FE00F082AE /* iOS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = iOS.xcodeproj; path = "../Open Source/SwiftOSC-master/Framework/iOS/iOS.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +76,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D18A3F12CE6470600F082AE /* SwiftOSC.framework in Frameworks */,
+				9D18A3562CE5C39300F082AE /* CocoaAsyncSocket in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +105,7 @@
 				9D18A33A2CD2E80C00F082AE /* Max-GyroTests */,
 				9D18A3442CD2E80C00F082AE /* Max-GyroUITests */,
 				9D18A3282CD2E80B00F082AE /* Products */,
+				9D18A3EA2CE646FD00F082AE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +155,22 @@
 			path = "Max-GyroUITests";
 			sourceTree = "<group>";
 		};
+		9D18A3EA2CE646FD00F082AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D18A3EB2CE646FE00F082AE /* iOS.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D18A3EC2CE646FE00F082AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D18A3F02CE646FE00F082AE /* SwiftOSC.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,12 +181,16 @@
 				9D18A3232CD2E80B00F082AE /* Sources */,
 				9D18A3242CD2E80B00F082AE /* Frameworks */,
 				9D18A3252CD2E80B00F082AE /* Resources */,
+				9D18A3F32CE6470600F082AE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Max-Gyro";
+			packageProductDependencies = (
+				9D18A3552CE5C39300F082AE /* CocoaAsyncSocket */,
+			);
 			productName = "Max-Gyro";
 			productReference = 9D18A3272CD2E80B00F082AE /* Max-Gyro.app */;
 			productType = "com.apple.product-type.application";
@@ -215,8 +263,17 @@
 				Base,
 			);
 			mainGroup = 9D18A31E2CD2E80B00F082AE;
+			packageReferences = (
+				9D18A3542CE5C39300F082AE /* XCRemoteSwiftPackageReference "CocoaAsyncSocket" */,
+			);
 			productRefGroup = 9D18A3282CD2E80B00F082AE /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 9D18A3EC2CE646FE00F082AE /* Products */;
+					ProjectRef = 9D18A3EB2CE646FE00F082AE /* iOS.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				9D18A3262CD2E80B00F082AE /* Max-Gyro */,
@@ -225,6 +282,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		9D18A3F02CE646FE00F082AE /* SwiftOSC.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftOSC.framework;
+			remoteRef = 9D18A3EF2CE646FE00F082AE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		9D18A3252CD2E80B00F082AE /* Resources */ = {
@@ -429,13 +496,13 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "xmu.Max-Gyro";
+				PRODUCT_BUNDLE_IDENTIFIER = "ponikii.Max-Gyro";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -458,13 +525,13 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "xmu.Max-Gyro";
+				PRODUCT_BUNDLE_IDENTIFIER = "ponikii.Max-Gyro";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -588,6 +655,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9D18A3542CE5C39300F082AE /* XCRemoteSwiftPackageReference "CocoaAsyncSocket" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/robbiehanson/CocoaAsyncSocket";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.6.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9D18A3552CE5C39300F082AE /* CocoaAsyncSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9D18A3542CE5C39300F082AE /* XCRemoteSwiftPackageReference "CocoaAsyncSocket" */;
+			productName = CocoaAsyncSocket;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9D18A31F2CD2E80B00F082AE /* Project object */;
 }
