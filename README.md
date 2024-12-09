@@ -32,8 +32,7 @@ This project allows you to send real-time gyroscope data from an iPhone to Max/M
 
 	1. Clone or download the both reposit.
 	1. Open the `Max-Gyro` project in Xcode and navigate to frame work.
-
-![](assets\1.png)
+![Example Image](assets/1.png)
 
 click "+" and add workspace from SwiftOSC as other files
 
