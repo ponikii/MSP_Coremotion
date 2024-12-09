@@ -34,15 +34,15 @@ This project allows you to send real-time gyroscope data from an iPhone to Max/M
 - Open the `Max-Gyro` project in Xcode and navigate to frame work.
 ![Example Image](assets/1.png)
 click "+" and add workspace from SwiftOSC as other files
-![Example Image](assets\3.png)
+![Example Image](assets/3.png)
 click "+" again to add framework
-![Example Image](assets\4.png)
+![Example Image](assets/4.png)
 
 #### 2. Build and run the app on iOS device.
 
 - Ensure your app's bundle identifier and team settings are configured for deployment.
 - Set IP address and port. Set data update interval.
-![Example Image](assets\2.PNG)
+![Example Image](assets/2.PNG)
 
 ###  Network Configuration
 
@@ -54,7 +54,7 @@ click "+" again to add framework
 1. Drag&Drop m4l device to Ableton as audio effects.
 
 2. Type in port number to receive and process the UDP data:
-    ![](assets\5.png)
+    ![](assets/5.png)
 3. Click MAP to use the unpacked `x`, `y`, and `z` values to control any parameters within Ableton, such as synth knobs or audio effects. Adjust modulation range. Click "X" to unmap.
 
 - Modulation amount changes with the rotation of the device.
