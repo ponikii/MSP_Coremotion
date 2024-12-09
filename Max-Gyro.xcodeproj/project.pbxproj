@@ -41,6 +41,13 @@
 			remoteGlobalIDString = 036486761F820BBD00F3D6CE;
 			remoteInfo = SwiftOSC;
 		};
+		9D740CB72D069E1600679D9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D740CB32D069E1600679D9F /* watchOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A20E7423D577BF007F93F5;
+			remoteInfo = SwiftOSC;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -69,6 +76,7 @@
 		9D18A3452CD2E80C00F082AE /* Max_GyroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Max_GyroUITests.swift; sourceTree = "<group>"; };
 		9D18A3472CD2E80C00F082AE /* Max_GyroUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Max_GyroUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9D18A3EB2CE646FE00F082AE /* iOS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = iOS.xcodeproj; path = "../Open Source/SwiftOSC-master/Framework/iOS/iOS.xcodeproj"; sourceTree = "<group>"; };
+		9D740CB32D069E1600679D9F /* watchOS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = watchOS.xcodeproj; path = "../Open Source/SwiftOSC-master/Framework/watchOS/watchOS.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +166,7 @@
 		9D18A3EA2CE646FD00F082AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9D740CB32D069E1600679D9F /* watchOS.xcodeproj */,
 				9D18A3EB2CE646FE00F082AE /* iOS.xcodeproj */,
 			);
 			name = Frameworks;
@@ -167,6 +176,14 @@
 			isa = PBXGroup;
 			children = (
 				9D18A3F02CE646FE00F082AE /* SwiftOSC.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D740CB42D069E1600679D9F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D740CB82D069E1600679D9F /* SwiftOSC.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -273,6 +290,10 @@
 					ProductGroup = 9D18A3EC2CE646FE00F082AE /* Products */;
 					ProjectRef = 9D18A3EB2CE646FE00F082AE /* iOS.xcodeproj */;
 				},
+				{
+					ProductGroup = 9D740CB42D069E1600679D9F /* Products */;
+					ProjectRef = 9D740CB32D069E1600679D9F /* watchOS.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -289,6 +310,13 @@
 			fileType = wrapper.framework;
 			path = SwiftOSC.framework;
 			remoteRef = 9D18A3EF2CE646FE00F082AE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9D740CB82D069E1600679D9F /* SwiftOSC.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftOSC.framework;
+			remoteRef = 9D740CB72D069E1600679D9F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */

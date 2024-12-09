@@ -100,7 +100,7 @@ struct ContentView: View {
                 Text("Gyroscope Update Interval: \(String(format: "%.2f", gyroSender.gyroUpdateInterval)) seconds")
                     .padding()
 
-                Slider(value: $gyroSender.gyroUpdateInterval, in: 0.1...5.0, step: 0.1)
+                Slider(value: $gyroSender.gyroUpdateInterval, in: 0.1...1.5, step: 0.05)
                     .padding()
                     .onChange(of: gyroSender.gyroUpdateInterval) { newValue in
                         gyroSender.motionManager.gyroUpdateInterval = newValue  // 动态更新陀螺仪更新间隔
